@@ -26,7 +26,7 @@ class Ping:
 
 
 # Do the pings
-ping_output = subprocess32.check_output(["ping", host, "-c 5"]).decode("utf-8")
+ping_output = subprocess32.check_output(["ping", host, "-c 3"]).decode("utf-8")
 pings = []
 
 for line in ping_output.split('\n'):
